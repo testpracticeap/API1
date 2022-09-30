@@ -22,6 +22,7 @@ public class MessageController {
 	
 	
 	@RequestMapping(value="/function", method = RequestMethod.POST)
+
 	public SampleResponse function(@RequestBody PostRequest Test) {
 		SampleResponse response = new SampleResponse();
 		response.setName(Test.getName());
