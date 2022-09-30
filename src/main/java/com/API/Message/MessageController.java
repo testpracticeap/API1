@@ -20,6 +20,7 @@ import com.API.Message.PostRequest;
 @RestController
 public class MessageController {
 	
+	
 	@RequestMapping(value="/function", method = RequestMethod.POST)
 	public SampleResponse function(@RequestBody PostRequest Test) {
 		SampleResponse response = new SampleResponse();
