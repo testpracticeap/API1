@@ -16,28 +16,25 @@ import org.springframework.web.bind.annotation.RestController;
 import com.API.Message.SampleResponse;
 import com.API.Message.PostRequest;
 
-
 @RestController
 public class MessageController {
-	
-	
-	@RequestMapping(value="/function", method = RequestMethod.POST)
+
+	@RequestMapping(value = "/function", method = RequestMethod.POST)
 
 	public SampleResponse function(@RequestBody PostRequest Test) {
 		SampleResponse response = new SampleResponse();
 		response.setName(Test.getName());
 		response.setEmpID(Test.getEmpID());
 		return response;
+
 	}
-	
-	//	@RequestParam(value = "Name", defaultValue ="Prathik")String Name;	
+
+	// @RequestParam(value = "Name", defaultValue ="Prathik")String Name;
 //		{
 //			SampleResponse respose = new 
 //		}
 //			)
-	
-	
-	
+
 //	@GetMapping(
 //			path = "/",
 //			produces = MediaType.APPLICATION_JSON_VALUE)
@@ -58,17 +55,5 @@ public class MessageController {
 //		Integer id =postrequest.size();
 //	}
 //			
-			
 
-	}
-	
-	
-	
-	
-		
-		
-	
-	
-	
-
-
+}
