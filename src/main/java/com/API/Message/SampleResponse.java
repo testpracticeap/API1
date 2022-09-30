@@ -39,6 +39,7 @@ public class SampleResponse {
 		this.Address = Address;
 	}
 
+	
 	public int getEmpID() {
 		return EmpID;
 	}
