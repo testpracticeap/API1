@@ -20,8 +20,7 @@ import com.API.Message.PostRequest;
 public class MessageController {
 
 	@RequestMapping(value = "/function", method = RequestMethod.POST)
-
-	public SampleResponse function(@RequestBody PostRequest Test) {
+      public SampleResponse function(@RequestBody PostRequest Test) {
 		SampleResponse response = new SampleResponse();
 		response.setName(Test.getName());
 		response.setEmpID(Test.getEmpID());
